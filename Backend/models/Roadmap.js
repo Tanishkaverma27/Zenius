@@ -5,4 +5,4 @@ const RoadmapSchema = new mongoose.Schema({
   focus: { type: String, required: true },
 });
 
-module.exports = mongoose.model("Roadmap", RoadmapSchema);
+module.exports = mongoose.models.Roadmap || mongoose.model("Roadmap", RoadmapSchema);
